@@ -1,0 +1,117 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left bottom, rgb(0, 0, 70), rgb(0, 0, 0));
+  background-repeat: no-repeat; /* no repite el background */
+  background-attachment: fixed; /* estira al background */
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #18181b;
+}
+
+#register {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #8b5cf6;
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espacio entre elementos */
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#register:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+
+  /* arriba, abajo y laterales */
+  padding: 190px 48px 48px;
+  width: fit-content; /* encaja el contenido, nos da un espacio lat */
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: "Roboto Mono";
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none; /* pp para que funcione en otros nav */
+  height: 64px;
+  width: 64px;
+  border-radius: 8px;
+  border: 2px solid #27272a;
+
+  background: #18181b;
+}
+/* pseudo-selector */
+input:checked {
+  border: 2px solid #a78bfa;
+  background-color: #8b5cf6;
+}
+
+/* Cuando la pantalla sea menor a 570, se aplica */
+/* de 0 a 570 */
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}

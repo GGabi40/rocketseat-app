@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habits</title>
+    <link rel="website icon" href="./assets/plus.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logo Habits" />
+      <button id="register">
+        <img src="./assets/plus.svg" alt="ícone +" />
+        <div>Registrar o meu dia</div>
+      </button>
+    </header>
+
+    <form>
+      <div class="habits">
+        <div class="habit" data-name="run">🏋️‍♂️</div>
+        <div class="habit" data-name="water">🫗</div>
+        <div class="habit" data-name="food">🥕</div>
+        <div class="habit" data-name="study">📖</div>
+        <div class="habit" data-name="programming">🚀</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
