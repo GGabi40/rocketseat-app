@@ -34,6 +34,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Habits é um projeto criado para que seu usuarios possam registrar seus hábitos com o objetivo de manter-los por um largo período de tempo.
 
+- [Visite o projeto online] (https://ggabi40.github.io/rocketseat-app)
+
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
